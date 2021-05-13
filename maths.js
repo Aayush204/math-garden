@@ -34,8 +34,19 @@ function checkAnswer() {
     } else {
         if (score != 0) { score--; }
         console.log(`Wrong. Score ${score}`);
+        Swal.fire({
 
-        alert('Oops! Check your calculations and try writing the number neater next time!');
+  icon: 'error',
+
+  title: 'The Correct Answer is: ',
+
+  text: `${answer}`,
+
+  footer: ''
+
+})
+
+        //alert('Oops! Check your calculations and try writing the number neater next time!');
         setTimeout(function () {
             backgroundImages.pop();
             document.body.style.backgroundImage = backgroundImages;
