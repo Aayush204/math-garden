@@ -54,7 +54,14 @@ h1, h2 {
   text-align: center;
 	text-decoration:none;
 }
-
+.swl {
+  font-family: cursive !important;
+  font-weight: bolder !important;
+  display: block !important;
+  font-size: x-large !important;
+  text-align: center !important;
+  border-radius: 80px !important;
+}
 
 /* TODO: Styling by class: add Styling for button on hover */
 .btn:hover {
