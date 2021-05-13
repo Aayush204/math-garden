@@ -42,7 +42,7 @@ function checkAnswer() {
 
   text: `<h1>${answer}</h1>`,
 
-  footer: ''
+  footer: 'Try Again'
 
 })
 
