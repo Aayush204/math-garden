@@ -26,7 +26,15 @@ function checkAnswer() {
             backgroundImages.push(`url('images/background${score}.svg')`);
             document.body.style.backgroundImage = backgroundImages;
         } else {
-            alert('Well done! Your maths garden is in full bloom! Want to start again?');
+            Swal.fire({
+                position: "middle",
+                icon: "success",
+                title:
+                    "Well done! Your maths garden is in full bloom! Want to start again?",
+                showConfirmButton: true,
+                customClass: "swl",
+            });
+            //alert('Well done! Your maths garden is in full bloom! Want to start again?');
             score = 0;
             backgroundImages = [];
             document.body.style.backgroundImage = backgroundImages;
@@ -35,16 +43,11 @@ function checkAnswer() {
         if (score != 0) { score--; }
         console.log(`Wrong. Score ${score}`);
         Swal.fire({
-
-  icon: 'error',
-
-  title: 'The Correct Answer is: ',
-
-  text: `${answer}`,
-
-  footer: 'Try Again'
-
-})
+      icon: "warning",
+      title: `The Correct answer is: ${answer}`,
+      footer: "Try drawing the number neatly next time!",
+      customClass: "swl",
+    });
 
         //alert('Oops! Check your calculations and try writing the number neater next time!');
         setTimeout(function () {
