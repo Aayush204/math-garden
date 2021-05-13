@@ -40,7 +40,7 @@ function checkAnswer() {
 
   title: 'The Correct Answer is: ',
 
-  text: <h1>${answer}</h1>,
+  text: `${answer}`,
 
   footer: 'Try Again'
 
