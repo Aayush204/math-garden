@@ -27,7 +27,7 @@ function checkAnswer() {
             document.body.style.backgroundImage = backgroundImages;
         } else {
             Swal.fire({
-                position: "middle",
+                position: "centre",
                 icon: "success",
                 title:
                     "Well done! Your maths garden is in full bloom! Want to start again?",
